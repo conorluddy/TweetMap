@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="css/style.css">
+	
+    <script type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDh_IA39gIvReNeYZ7FBgqA7s9d9ld3ciM&sensor=false">
+    </script>
+
+  </head>
+  <body>
+
+    <div id="map_canvas" style="width:100%; height:100%"></div>
+
+  	<div id="latestTweet"></div>
+  	<div id="latestTweetAuthor"></div>
+
+    <div id="tweetDebugDatetime"></div>
+  	<div id="tweetDebugInfo"></div>
+
+  	
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  	<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.2.min.js"><\/script>')</script>
+
+  	<script src="js/tweetmap.js"></script>
+
+    <script>
+      $(document).ready(function() {
+
+        $(document).tweetMap();
+        
+      });
+    </script>
+
+  </body>
+</html>
